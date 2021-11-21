@@ -13,6 +13,9 @@
     --placeholder : #C4C4C4;
     --submit : #E8963A;
 }
+#logo{
+      width: 100%;
+}
 #photoprincipal{
     background-image: url(IMAGES/background/backg-Principal.jpg);
     background-size: cover;
