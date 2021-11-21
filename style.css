@@ -3,3 +3,90 @@
     padding: 0;
     font-family: Arial;
 }
+:root{
+    --black : #000000 ;
+    --White : #ffffff ;
+    --Backgoundnav : #E8633A;
+    --Backgtitle : #CE4A21;
+    --fonttitleyellow : #FFBB40;
+    --BackgSubtitle : #EB8355;
+    --placeholder : #C4C4C4;
+    --submit : #E8963A;
+}
+#photoprincipal{
+    background-image: url(IMAGES/background/backg-Principal.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 285px;
+
+}
+#Slogon{
+    padding: 10%;
+}
+header h1{
+    font-size: 190%;
+}
+.backround{
+    background-size: cover;
+    margin: 0% 5% 7% 5%;
+    padding: 1% 0% 2% 0%; 
+    border-radius: 5px;
+}
+#backg-About{
+    background-image: url(IMAGES/background/Backg-About.jpg);
+    background-size: cover;
+    margin: 0% 5% 0% 5% ;
+}
+section h1{   
+    display: flex;
+    margin: 7% 30%;
+    border-radius: 5px;
+    padding: 2%;
+    justify-content: center;
+    color: var(--fonttitleyellow);
+    background-color: var(--Backgtitle);
+}
+section p{
+    font-size:16px;
+    padding: 7%;
+}
+section h2{
+    display: flex;
+    margin: 7% 30%;
+    border-radius: 5px;
+    padding: 2%;
+    justify-content: center;
+    background-color: var(--BackgSubtitle);
+}
+#backg-classes{
+    background-image: url(IMAGES/background/Backg-Classes.jpg);
+    
+
+}
+section img{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    margin: left;
+    padding: 0% 0% 5% 8%;
+}
+#Opening-Hours{
+    background-image: url(IMAGES/background/Backg-Opening.jpg);
+}
+#Opening-Hours h2{
+    margin: 7% 25%;
+}
+.Calendar{
+    border: solid 2px;
+    border-radius: 3px;
+    margin: 5%;
+}
+#backg-event{
+    background-image: url(IMAGES/background/Backgr-Event.jpg);
+}
+#Couches{
+    background-image: url(IMAGES/background/Backg-coatches.jpg);
+}
+#Couches h2{
+    margin: 7% 23%;
+}
