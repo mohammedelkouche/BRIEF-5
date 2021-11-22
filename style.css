@@ -13,7 +13,7 @@
     --placeholder : #C4C4C4;
     --submit : #E8963A;
 }
-#logo{
+nav img{
       width: 100%;
 }
 #photoprincipal{
@@ -21,7 +21,7 @@
     background-size: cover;
     width: 100%;
     height: 285px;
-
+    
 }
 #Slogon{
     padding: 10%;
