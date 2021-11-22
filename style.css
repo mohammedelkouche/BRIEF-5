@@ -7,9 +7,11 @@
     --black : #000000 ;
     --White : #ffffff ;
     --Backgoundnav : #E8633A;
+    --Backgroundtitle:8A8C8D;
     --Backgtitle : #CE4A21;
     --fonttitleyellow : #FFBB40;
     --BackgSubtitle : #EB8355;
+    --backgroundtitle:#8A8C8D;
     --placeholder : #C4C4C4;
     --submit : #E8963A;
 }
@@ -25,30 +27,28 @@ nav img{
 }
 #Slogon{
     padding: 10%;
-    color: var(--White);
+    color:var(--White)
 }
 header h1{
     font-size: 190%;
 }
 .backround{
-    background-size: cover;
     margin: 0% 5% 7% 5%;
     padding: 1% 0% 2% 0%; 
     border-radius: 5px;
 }
 #backg-About{
-    background-image: url(IMAGES/background/Backg-About.jpg);
+    background-color:var(--backgroundtitle);
     background-size: cover;
     margin: 0% 5% 0% 5% ;
+
 }
 section h1{   
     display: flex;
-    margin: 7% 30%;
-    border-radius: 5px;
+    
     padding: 2%;
     justify-content: center;
     color: var(--fonttitleyellow);
-    background-color: var(--Backgtitle);
 }
 section p{
     font-size:16px;
