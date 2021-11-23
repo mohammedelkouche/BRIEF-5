@@ -17,7 +17,7 @@
 /* nav */
 
 nav img{
-      width: 100%;
+      width: 10%;
 }
 #photoprincipal{
     background-image: url(IMAGES/background/backg-principale.png);
@@ -43,7 +43,7 @@ header h1{
 }
 #backg-About{
     margin: 0% 5% 0% 5% ;
-
+   
 }
 section h1{   
     display: flex;
@@ -100,8 +100,9 @@ section img{
 }
 
 .font-subt{
-    margin: 7% 25%;
+    margin: 5% 25% 0% 25%;
     color: var(--Orange);
+    font-size: 24px;
 }
 .Calendar{
     border: solid 2px;
@@ -158,7 +159,8 @@ button{
     .backround{
         background-color:var(--Backgsection) ;
         background-size: cover;
-        padding: 1% 0% 2% 6%; 
+        padding: 1% 0% 3% 0%;
+
     }
     #backg-About{
         margin: 0% 5% 0% 5% ;
@@ -169,7 +171,7 @@ button{
     }
     section p{
         font-size:40px;
-        margin: -4% -6% 4% -4% ;
+        /* margin: -4% -6% 4% -4% ; */
         margin:  auto;
     }
     #subtitle h2{
@@ -183,16 +185,40 @@ button{
 
         width: 450px;
     }
+    /* #img-fitness,#img-kickboxing,#img-zumba img{
+        width: 95%;
+        margin: 0;
+        padding: 0;
+    } */
     #img-fitness{
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
-        height: 30px;
+        display: flex;
+        /* justify-content: center; */
+        justify-content: center;
+        column-gap: 40px;
+        width: 100%;
+    }
+    #img-fitness div img{
+        width: 500px;
+        height: 300px;
+        column-gap: 50px;
     }
     #img-kickboxing {
         display: flex;
+        justify-content: center;
+        column-gap: 40px;
+    }
+    #img-kickboxing div img{
+        width: 500px;
+        height: 300px;
     }
     #img-zumba{
         display: flex;
+        justify-content: center;
+        column-gap: 40px;
+    }
+    #img-zumba div img{
+        width: 500px;
+        height: 300px;
     }
     #calender{
         display: flex;
@@ -201,6 +227,22 @@ button{
          display: flex; 
          margin-left: -4%;
     }
-    
-
+    .font-subt{
+        margin: 5% 25% 0% 25%;
+        font-size: 50px;
+    }
+    #flex-calender{
+    display: flex;
+    }
+    #flex-coatches{
+        display: flex;
+    }
+    /* #flex-coatches .size-container{
+        width: 95%;
+        margin: 0%;
+        padding: 0%;
+    } */
+    flex-coatches p{
+        font-size: 10px;
+    }
 }
