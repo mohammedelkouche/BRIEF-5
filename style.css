@@ -1,20 +1,30 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+/* variables */
+
 :root{
     --black : #000000 ;
     --White : #ffffff ;
+<<<<<<< HEAD
     --Backgoundnav : #E8633A;
     --Backgroundtitle:8A8C8D;
     --Backgtitle : #CE4A21;
     --fonttitleyellow : #FFBB40;
     --BackgSubtitle : #EB8355;
     --backgroundtitle:#8A8C8D;
+=======
+    --Orange:#EB6F47;
+    --Backgsection : #D6D6D6;
+>>>>>>> 999584290214c675e1f6f298c152f5d1d54c847e
     --placeholder : #C4C4C4;
-    --submit : #E8963A;
 }
+
+/* nav */
+
 nav img{
       width: 100%;
 }
@@ -29,43 +39,82 @@ nav img{
     padding: 10%;
     color:var(--White)
 }
+
+/* section  ABOUT US*/
+
 header h1{
     font-size: 190%;
 }
 .backround{
+<<<<<<< HEAD
     margin: 0% 5% 7% 5%;
+=======
+    background-color:var(--Backgsection) ;
+    background-size: cover;
+>>>>>>> 999584290214c675e1f6f298c152f5d1d54c847e
     padding: 1% 0% 2% 0%; 
-    border-radius: 5px;
 }
 #backg-About{
+<<<<<<< HEAD
     background-color:var(--backgroundtitle);
     background-size: cover;
+=======
+>>>>>>> 999584290214c675e1f6f298c152f5d1d54c847e
     margin: 0% 5% 0% 5% ;
 
 }
 section h1{   
     display: flex;
+<<<<<<< HEAD
     
     padding: 2%;
     justify-content: center;
     color: var(--fonttitleyellow);
+=======
+    margin: 7% 24%; 
+    font-size: 30px;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+    color: var(--Orange)
+>>>>>>> 999584290214c675e1f6f298c152f5d1d54c847e
 }
 section p{
     font-size:16px;
     padding: 7%;
 }
+/* section CLASSES */
 section h2{
     display: flex;
     margin: 7% 30%;
-    border-radius: 5px;
     padding: 2%;
     justify-content: center;
-    background-color: var(--BackgSubtitle);
+    margin: 0px 25px;
 }
-#backg-classes{
-    background-image: url(IMAGES/background/Backg-Classes.jpg);
-    
-
+#subtitle h2{
+    position: relative;
+}
+#subtitle h2:before{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: var(--black);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 50%;
+    /* z-index: -2; */
+}
+#subtitle h2:after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: var(--black);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    /* z-index: -2; */
 }
 section img{
     width: 85%;
@@ -74,23 +123,47 @@ section img{
     margin: left;
     padding: 0% 0% 5% 8%;
 }
-#Opening-Hours{
-    background-image: url(IMAGES/background/Backg-Opening.jpg);
-}
-#Opening-Hours h2{
+
+.font-subt{
     margin: 7% 25%;
+    color: var(--Orange);
 }
 .Calendar{
     border: solid 2px;
     border-radius: 3px;
     margin: 5%;
 }
-#backg-event{
-    background-image: url(IMAGES/background/Backgr-Event.jpg);
+form{
+    display: grid;
+    grid-column: 40px;
+    color: var(--Orange);
+    margin: 30px;
+    background-color: var(--Orange); 
 }
-#Couches{
-    background-image: url(IMAGES/background/Backg-coatches.jpg);
+input,textarea{
+   margin: 0% 15% 7% 15% ;
+   padding: 2%;
+   border: 0px;
+   border-radius: 3px;
+   font-style: italic;
+   color: var(--placeholder);
 }
-#Couches h2{
-    margin: 7% 23%;
+form h1{
+    color: var(--black);
+    margin-left: -4%;
 }
+textarea{
+    height: 70px;
+}
+
+button{
+    width: 25%;
+    margin: 0% 0% 7% 15% ;
+    border: 0%;
+    border-radius: 5px;
+    padding: 2%;
+    background-color: var(--black);
+    color: white;
+    
+}
+
