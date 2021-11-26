@@ -5,16 +5,17 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* variables */
+/*--------------color variables-------------- */
 :root{
     --black : #000000 ;
     --White : #ffffff ;
     --Orange:#EB6F47;
+    --gris : #302828 ;
     --Backgsection : #D6D6D6;
     --placeholder : #C4C4C4;
 }
 
-/* nav */
+/* -------------- nav --------------*/
 
 nav img{
     width: 15%;
@@ -23,22 +24,21 @@ nav img{
 nav{
     background-color: var(--Orange);
     width: 100%;
-    height: 50px;
-    /* display: flex; */
-    
-    }
-    .tyger-logo{
+    height: 60px;
+    /* display: flex; */    
+}
+.tyger-logo{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
-    .menu{
+}
+.menu{
     display: none;
-    }
-    nav ul li a:hover{
+}
+nav ul li a:hover{
         color: var(--White);
-    }
-    .overlay {
+}
+.overlay {
     height: 100%;
     width: 0;
     position: fixed;
@@ -48,21 +48,19 @@ nav{
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
-    transition: 0.5s;
-    
-  }
-  #bottonn{
-      margin-right: 20px;
-  }
-  .overlay-content {
+    transition: 0.5s;   
+}
+#bottonn{
+    margin-right: 20px;
+}
+.overlay-content {
     position: relative;
     top: 25%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
-  }
-  
-  .overlay a {
+}
+.overlay a {
     padding: 8px;
     text-decoration: none;
     font-family: 'Anton', sans-serif;
@@ -70,20 +68,18 @@ nav{
     color: #EB6F47;
     display: block;
     transition: 0.3s;
-  }
-
-  
-  .overlay a:hover, .overlay a:focus {
+}  
+.overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
-  }
-  
-  .overlay .closebtn {
+}  
+.overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
-  }
+}
 
+/*-------------- header --------------*/
 
 #photoprincipal{
     background-image: url(IMAGES/background/backg-principale.png);
@@ -104,7 +100,7 @@ nav{
     text-align: center;
 }
 
-/* section  ABOUT US*/
+/*--------------section ABOUT US --------------*/
 
 /* header h1{
     font-size: 190%;
@@ -134,7 +130,9 @@ section p{
     font-size:16px;
     padding: 7%;
 }
-/* section CLASSES */
+
+/* -------------- section CLASSES -------------- */
+
 section h2{
     /* display: flex;
     margin: 7% 30%;
@@ -147,38 +145,44 @@ section h2{
 #subtitle h2{
     position: relative;
 }
-#subtitle h2:before{
-    content: "";
-    display: block;
-    width: 120px;
-    height: 1px;
-    background: var(--black);
-    position: absolute;
-    margin: auto;
-    left: 0;
-    top: 50%;
-    /* z-index: -2; */
-}
-#subtitle h2:after{
-    content: "";
-    display: block;
-    width: 120px;
-    height: 1px;
-    background: var(--black);
-    position: absolute;
-    right: 0;
-    top: 50%;
-    /* z-index: -2; */
-}
+
+    /* -------------- ligne code start  --------------*/
+    
+    #subtitle h2:before{
+        content: "";
+        display: block;
+        width: 120px;
+        height: 1px;
+        background: var(--black);
+        position: absolute;
+        margin: auto;
+        left: 0;
+        top: 50%;
+        /* z-index: -2; */
+    }
+    #subtitle h2:after{
+        content: "";
+        display: block;
+        width: 120px;
+        height: 1px;
+        background: var(--black);
+        position: absolute;
+        right: 0;
+        top: 50%;
+        /* z-index: -2; */
+    }
+
+    /* -------------- ligne code end  --------------*/
+
 section img{
     width: 85%;
     display: flex;
     /* justify-content: center;
     padding: 0% 0% 5% 0%; */
-    margin-left: 32px;
+    /* margin-left: 32px; */
+    margin: 0 auto;
     margin-top: 5px;
-    margin-bottom: 5px;
-}
+    margin-bottom: 18px;}
 
 .font-subt{
     /* margin: 5% 25% 0% 25%; */
@@ -191,11 +195,20 @@ section img{
 #Coaches{
     margin-bottom: 20px;
 }
+#flex-coatches h2{
+    margin: 12px;
+    font-family: cursive;
+    font-size: 16px;
+
+}
 .Calendar{
     border: solid 2px;
     border-radius: 3px;
     margin: 5%;
 }
+
+/* -------------- formulaire --------------*/
+
 #formulaire{
     display: flex;
     justify-content: center;
@@ -218,7 +231,7 @@ input,textarea{
    font-size: 10px;
 }
 form h1{
-    color: var(--black);
+    color: var(--gris);
     margin-left: 0%;
 }
 textarea{
@@ -243,7 +256,9 @@ button:hover{
     /* font-style: normal; */
 }
 
-#footer-1{
+/* -------------- footer  --------------*/
+
+ #footer-1{
     display: flex;
     justify-content: space-around;
 }
@@ -286,12 +301,14 @@ button:hover{
 
 
 
-
-
+ /* -------------- Media queries " parti Desctop " --------------*/ 
 
 
 
 @media screen and (min-width:800px) {
+
+/* -------------- nav --------------*/
+
     nav{
         height: 100px;
         /* display: flex; */
@@ -305,20 +322,21 @@ button:hover{
     .menu{
         display: flex;
         font-size: 170%;
-        color: var(--black);
-        margin-right: 40px;        /* margin-right: 15px; */
+        font-family: 'Anton', sans-serif;
+        margin-right: 40px;     
+        /* margin-right: 15px; */
         /* margin: -16%; */
         /* padding: 2%; */
     }
     .menu a {
         text-decoration: none;
         color: var(--black);
-
+        font-family: 'Anton', sans-serif;
     }
 
     nav ul li{
         display: flex;
-        font-family: 'Anton', sans-serif;
+        /* font-family: 'Anton', sans-serif; */
         line-height: 60px;
         margin: 0 15px;
 
@@ -366,6 +384,8 @@ button:hover{
         right: 45px;
         font-size: 60px;
     }
+    
+/*-------------- header --------------*/
 
     #photoprincipal{
         width: 100%;
@@ -378,6 +398,9 @@ button:hover{
     header h1{
         font-size: 280%;
     }
+
+/*--------------section ABOUT US --------------*/
+
     .backround{
         background-color:var(--Backgsection) ;
         background-size: cover;
@@ -389,36 +412,30 @@ button:hover{
     section h1{ 
         text-align: center;  
         /* margin: 8% 24% 0% 24%;  */
-
         font-size: 50px;  
     }
     section p{
         font-size:40px;
         margin-top: -51px;
+        margin-bottom: -48px;
         /* margin: -4% -6% 4% -4% ; */
         /* margin:  auto; */
     }
-    #flex-calender p ,#flex-coatches p{
-        margin-top: 5px;
-    }
+
+/* -------------- section CLASSES -------------- */
+
     section h2{
         margin-top: 70px;
     }
     #subtitle h2{
         font-size: 40px;
     }
-    #subtitle h2:before{
-        
-        width: 450px;
-    }
-    #subtitle h2:after{
-
-        width: 450px;
-    }
     .img-classes{
         display: flex;
         justify-content: center;
         column-gap: 40px;
+        margin-bottom: 9px;
+        margin-top: 5px;
         /* width: 100%; */
     }
     .img-classes div img{
@@ -434,9 +451,23 @@ button:hover{
         /* margin: 5% 25% 0% 25%; */
         font-size: 50px;
     }
+
+/* -------------- ligne code end  --------------*/
+
+    #subtitle h2:before{
+        
+        width: 450px;
+    }
+    #subtitle h2:after{
+
+        width: 450px;
+    }
+
+/* -------------- ligne code end  --------------*/
+
     #flex-calender{
-    display: flex;
-    margin-top: -105px;
+        display: flex;
+        margin-top: -105px;
     }
     #flex-coatches{
         display: flex;
@@ -446,9 +477,20 @@ button:hover{
     #flex-coatches div p{
         font-size: 27px;
     }
+    #flex-coatches h2{
+        margin: 14px;
+        font-size: 25px;
+
+    }
+    #flex-calender p ,#flex-coatches p{
+        margin-top: 5px;
+    }
     .size-container{
         width: 33.33%;
     }
+
+/* -------------- formulaire --------------*/
+
     form{
         width: 50%;      
     }
@@ -469,6 +511,8 @@ button:hover{
         font-size: 18px;
         /* font-style: normal; */
     }
+/* -------------- footer  --------------*/
+
     #footer-1 i{
         font-size: 40px;
     }
